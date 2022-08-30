@@ -1,5 +1,4 @@
 import json
-from rich.layout import Layout
 from rich.console import Console
 from rsa import newkeys, encrypt, decrypt, PrivateKey, PublicKey
 import os
@@ -181,7 +180,6 @@ class PasswordManagerFrontend:
         clear()
         self.backend = PasswordManagerBackend()
         self.console = Console(color_system="truecolor", width=120, height=30)
-        self.layout = Layout()
 
     @staticmethod
     def evaluate_decision(user_input, type_wanted):
