@@ -1,8 +1,6 @@
 import json
 from rich.layout import Layout
 from rich.console import Console
-from rich.text import Text
-from rich.live import Live
 from rsa import newkeys, encrypt, decrypt, PrivateKey, PublicKey
 import os
 import time
